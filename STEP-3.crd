@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "flows": [
+    {
+      "id": "research",
+      "name": "Research"
+    }
+  ],
+  "step": {
+    "no": 3,
+    "of": 6,
+    "title": "Retrieve evidence with stable citations",
+    "branch": "step-03-retrieve-evidence-with-stable-citations",
+    "previous": "STEP-2.crd",
+    "removed": []
+  },
+  "components": [
+    {
+      "id": "be.evidence",
+      "name": "evidence",
+      "kind": "function",
+      "side": "backend",
+      "layer": "service",
+      "description": "Retrieve evidence with stable citations",
+      "flows": [
+        "research"
+      ],
+      "source": {
+        "file": "app/evidence.py",
+        "symbol": "evidence",
+        "lines": [
+          1,
+          60
+        ]
+      },
+      "owner": "research",
+      "status": "observed",
+      "inputs": [],
+      "validations": [],
+      "operations": [],
+      "outputs": [],
+      "attributes": {},
+      "step_change": "added"
+    }
+  ],
+  "dependencies": [],
+  "unresolved": []
+}
