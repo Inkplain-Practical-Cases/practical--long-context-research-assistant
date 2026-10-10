@@ -4,7 +4,7 @@
     "slug": "long-context-research-assistant",
     "name": "Long-Context Research Assistant"
   },
-  "current": "inkp",
+  "current": "content",
   "stages": {
     "intro": {
       "status": "done",
@@ -33,7 +33,19 @@
       "started_at": "2026-10-10T10:03:14.007Z",
       "finished_at": "2026-10-10T11:16:00.264Z",
       "updated_by": "api-key:for-chatgpt-test-2"
+    },
+    "inkp": {
+      "status": "done",
+      "summary": "Six ordered INKP Simulator tabs, linked executor documents and zero missing links verified with get_inkp_summary.",
+      "outputs": {
+        "tabs": 6,
+        "missing_links": 0,
+        "inkp_path": "long-context-research-assistant.inkp"
+      },
+      "started_at": "2026-10-10T11:16:06.122Z",
+      "finished_at": "2026-10-10T11:16:06.122Z",
+      "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-10T11:16:00.264Z"
+  "updated_at": "2026-10-10T11:16:06.122Z"
 }
