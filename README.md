@@ -1,18 +1,5 @@
 # Long-Context Research Assistant
 
-Evidence-aware long-document research with strict context budgets.
+Six cumulative teaching branches; STEP-1 implements a typed research intake API with a deterministic in-memory repository. This is **not** yet a long-context inference engine or production authorization layer.
 
-An Inkplain practical case: a real project built step by step.
-
-## How this repository works
-
-Every step of the lesson has its own branch, and each one contains all steps up to it:
-
-```bash
-git clone https://github.com/Inkplain-Practical-Cases/practical--long-context-research-assistant.git
-cd practical--long-context-research-assistant
-git branch -r            # list the step branches
-git checkout step-01-…   # code after step 1
-```
-
-`main` holds the final, complete version.
+Run: `python -m pip install -r requirements.txt`, `python -m pytest -q`, `uvicorn app.main:app --reload`. Submit POST `/research` with a tenant_id, question, and 1–5 title/text documents. Use synthetic data only.
