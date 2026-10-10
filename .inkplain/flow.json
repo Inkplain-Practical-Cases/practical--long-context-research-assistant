@@ -4,7 +4,7 @@
     "slug": "long-context-research-assistant",
     "name": "Long-Context Research Assistant"
   },
-  "current": "content",
+  "current": "done",
   "stages": {
     "intro": {
       "status": "done",
@@ -45,7 +45,22 @@
       "started_at": "2026-10-10T11:16:06.122Z",
       "finished_at": "2026-10-10T11:16:06.122Z",
       "updated_by": "api-key:for-chatgpt-test-2"
+    },
+    "content": {
+      "status": "done",
+      "summary": "Eight active categories and 45 lessons (Overview 18, six STEP groups of four, Conclusion 3); code-backed What-is, CRD, INKP, GitHub source, 4M and selected lesson QA. Deterministic educational implementation.",
+      "outputs": {
+        "categories": 8,
+        "items": 45,
+        "overview": 18,
+        "step_items": 24,
+        "conclusion": 3,
+        "structural_qa": true
+      },
+      "started_at": "2026-10-10T11:16:10.521Z",
+      "finished_at": "2026-10-10T11:16:10.521Z",
+      "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-10T11:16:06.122Z"
+  "updated_at": "2026-10-10T11:16:10.521Z"
 }
