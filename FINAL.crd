@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "flows": [
+    {
+      "id": "research",
+      "name": "Research"
+    }
+  ],
+  "step": {
+    "no": "final",
+    "of": 6,
+    "title": "Long-context research final",
+    "branch": "main",
+    "previous": "STEP-6.crd",
+    "removed": []
+  },
+  "components": [
+    {
+      "id": "be.research_flow",
+      "name": "research_flow",
+      "kind": "function",
+      "side": "backend",
+      "layer": "service",
+      "description": "Orchestrate bounded multi-document research",
+      "flows": [
+        "research"
+      ],
+      "source": {
+        "file": "app/research_flow.py",
+        "symbol": "research_flow",
+        "lines": [
+          1,
+          60
+        ]
+      },
+      "owner": "research",
+      "status": "observed",
+      "inputs": [],
+      "validations": [],
+      "operations": [],
+      "outputs": [],
+      "attributes": {},
+      "step_change": "added"
+    }
+  ],
+  "dependencies": [],
+  "unresolved": []
+}
