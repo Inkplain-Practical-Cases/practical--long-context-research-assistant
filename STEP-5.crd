@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "flows": [
+    {
+      "id": "research",
+      "name": "Research"
+    }
+  ],
+  "step": {
+    "no": 5,
+    "of": 6,
+    "title": "Generate extractive cited research answers",
+    "branch": "step-05-generate-extractive-cited-research-answe",
+    "previous": "STEP-4.crd",
+    "removed": []
+  },
+  "components": [
+    {
+      "id": "be.answer",
+      "name": "answer",
+      "kind": "function",
+      "side": "backend",
+      "layer": "service",
+      "description": "Generate extractive cited research answers",
+      "flows": [
+        "research"
+      ],
+      "source": {
+        "file": "app/answer.py",
+        "symbol": "answer",
+        "lines": [
+          1,
+          60
+        ]
+      },
+      "owner": "research",
+      "status": "observed",
+      "inputs": [],
+      "validations": [],
+      "operations": [],
+      "outputs": [],
+      "attributes": {},
+      "step_change": "added"
+    }
+  ],
+  "dependencies": [],
+  "unresolved": []
+}
