@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "flows": [
+    {
+      "id": "research",
+      "name": "Research"
+    }
+  ],
+  "step": {
+    "no": 4,
+    "of": 6,
+    "title": "Store scoped multi-turn research history",
+    "branch": "step-04-store-scoped-multi-turn-research-history",
+    "previous": "STEP-3.crd",
+    "removed": []
+  },
+  "components": [
+    {
+      "id": "be.session_store",
+      "name": "session_store",
+      "kind": "function",
+      "side": "backend",
+      "layer": "service",
+      "description": "Store scoped multi-turn research history",
+      "flows": [
+        "research"
+      ],
+      "source": {
+        "file": "app/session_store.py",
+        "symbol": "session_store",
+        "lines": [
+          1,
+          60
+        ]
+      },
+      "owner": "research",
+      "status": "observed",
+      "inputs": [],
+      "validations": [],
+      "operations": [],
+      "outputs": [],
+      "attributes": {},
+      "step_change": "added"
+    }
+  ],
+  "dependencies": [],
+  "unresolved": []
+}
