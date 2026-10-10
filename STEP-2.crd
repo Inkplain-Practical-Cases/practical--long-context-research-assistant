@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "name": "Context budget",
+  "flows": [
+    {
+      "id": "research",
+      "name": "Research"
+    }
+  ],
+  "step": {
+    "no": 2,
+    "of": 6,
+    "title": "Bounded context budgeting",
+    "branch": "step-02-bounded-context-window-and-token-budgeti",
+    "previous": "STEP-1.crd",
+    "removed": []
+  },
+  "components": [
+    {
+      "id": "be.context_budget",
+      "name": "pack_context",
+      "kind": "function",
+      "side": "backend",
+      "layer": "service",
+      "description": "Enforce bounded context",
+      "flows": [
+        "research"
+      ],
+      "source": {
+        "file": "app/context_budget.py",
+        "symbol": "pack_context",
+        "lines": [
+          1,
+          20
+        ]
+      },
+      "owner": "research",
+      "status": "observed",
+      "inputs": [],
+      "validations": [],
+      "operations": [],
+      "outputs": [],
+      "attributes": {},
+      "step_change": "added"
+    }
+  ],
+  "dependencies": [],
+  "unresolved": []
+}
