@@ -48,7 +48,7 @@
     },
     "content": {
       "status": "done",
-      "summary": "Source-backed persistence audit completed: MemoryResearchRepository and session history use process-local dictionaries/lists; no persistent storage. Therefore no STEP-N.erd, ERD tabs or Database lesson is warranted.",
+      "summary": "Added SQLite research API request/outcome audit at STEP-6; source-backed STEP-6/FINAL ERD, Simulator tab and second-position portal lesson verified.",
       "outputs": {
         "categories": 8,
         "items": 45,
@@ -57,9 +57,11 @@
         "conclusion": 3,
         "structural_qa": true,
         "erd_audit_complete": true,
-        "erd_applicable_steps": [],
-        "erd_not_applicable": true,
-        "erd_lessons_created": 0,
+        "erd_applicable_steps": [
+          6
+        ],
+        "erd_not_applicable": false,
+        "erd_lessons_created": 1,
         "erd_item_title": "Database (Entity) Relations",
         "erd_audit_note": "MemoryResearchRepository and session history use process-local dictionaries/lists; no persistent storage."
       },
@@ -68,5 +70,5 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-13T15:13:57.543Z"
+  "updated_at": "2026-10-13T15:54:16.600Z"
 }
